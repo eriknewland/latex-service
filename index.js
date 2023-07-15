@@ -38,7 +38,7 @@ async function convertAndStore(latexString) {
     path.join(tempDir, 'temp.log'),
     path.join(tempDir, 'temp.out'),
     tempPdfFile,
-    tempTexFile,
+    // tempTexFile,
   ];
   filesToDelete.forEach((file) => {
     if (fs.existsSync(file)) {

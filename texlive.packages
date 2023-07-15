@@ -10,3 +10,6 @@ etoolbox
 xkeyval
 collection-fontsrecommended
 psnfss
+fancyhdr
+titlesec
+setspace
