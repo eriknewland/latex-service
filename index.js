@@ -19,7 +19,7 @@ async function convertAndStore(latexString) {
   try {
   console.log('this is latex string: ', latexString)
   await new Promise((resolve, reject) => {
-    exec(`pdflatex ${tempTexFile}`, { cwd: path.dirname(tempTexFile) }, (error, stdout, stderr) => {
+    exec(`pdflatex temp.tex`, (error, stdout, stderr) => {
       if (error) {
         console.error(`Error executing pdflatex: ${error}`);
         reject(error);
