@@ -8,3 +8,4 @@ environ
 latexmk
 etoolbox
 xkeyval
+psnfss
