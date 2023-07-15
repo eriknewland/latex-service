@@ -69,7 +69,6 @@ app.post('/generate-pdf', async (req, res) => {
     res.contentType("application/pdf");
     res.status(200)
     res.send(pdfBuffer);
-    json({ message: 'Resume generated and stored successfully.'});
   } catch (error) {
     console.error('Error during resume generation:', error);
     res.status(500).json({ message: 'Error during resume generation.' });
