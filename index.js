@@ -17,7 +17,7 @@ async function convertAndStore(latexString) {
   fs.writeFileSync(tempTexFile, latexString);
 
   try {
-
+  console.log('this is latex string: ', latexString)
   await new Promise((resolve, reject) => {
     exec(`pdflatex ${tempTexFile}`, { cwd: path.dirname(tempTexFile) }, (error, stdout, stderr) => {
       if (error) {
