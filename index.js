@@ -14,7 +14,7 @@ async function convertAndStore(latexString) {
   const tempDir = path.join(process.cwd(), 'temp');
   const tempTexFile = path.join(tempDir, 'temp.tex');
   const tempPdfFile = path.join(tempDir, 'temp.pdf');
-  fs.writeFileSync(tempTexFile, latexString);
+  // fs.writeFileSync(tempTexFile, latexString);
 
   try {
   console.log('this is latex string: ', latexString)
