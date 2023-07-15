@@ -1,4 +1,11 @@
-collection-bibtexextra
-collection-fontsextra
-collection-langgerman
-collection-xetex
+geometry
+parskip
+keycommand
+xstring
+hyperref
+enumitem
+environ
+latexmk
+etoolbox
+xkeyval
+psnfss
