@@ -6,3 +6,4 @@ hyperref
 enumitem
 environ
 latexmk
+etoolbox
