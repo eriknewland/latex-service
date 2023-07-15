@@ -1,0 +1,10 @@
+geometry
+parskip
+keycommand
+xstring
+hyperref
+helvet
+fontenc
+enumitem
+environ
+latexmk
