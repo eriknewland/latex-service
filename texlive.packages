@@ -8,4 +8,5 @@ environ
 latexmk
 etoolbox
 xkeyval
+collection-fontsrecommended
 psnfss
