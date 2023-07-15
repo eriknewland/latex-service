@@ -13,3 +13,8 @@ psnfss
 fancyhdr
 titlesec
 setspace
+amsmath
+amsfonts
+amssymb
+graphicx
+xcolor

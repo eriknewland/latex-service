@@ -14,10 +14,9 @@ async function convertAndStore(latexString) {
   const tempDir = path.join(process.cwd(), 'temp');
   const tempTexFile = path.join(tempDir, 'temp.tex');
   const tempPdfFile = path.join(tempDir, 'temp.pdf');
-  // fs.writeFileSync(tempTexFile, latexString);
+  fs.writeFileSync(tempTexFile, latexString);
 
   try {
-  console.log('this is latex string: ', latexString)
   await new Promise((resolve, reject) => {
     exec(`pdflatex ${tempTexFile}`, { cwd: path.dirname(tempTexFile) }, (error, stdout, stderr) => {
       if (error) {
@@ -38,7 +37,7 @@ async function convertAndStore(latexString) {
     path.join(tempDir, 'temp.log'),
     path.join(tempDir, 'temp.out'),
     tempPdfFile,
-    // tempTexFile,
+    tempTexFile,
   ];
   filesToDelete.forEach((file) => {
     if (fs.existsSync(file)) {
